@@ -1,0 +1,37 @@
+<section class="favorites-">
+  <div class="favorites-__container">
+    <div class="favorites-__header">
+      <div>
+        <span class="favorites-__eyebrow">FAVORITOS</span>
+        <h1>Tu colección personal</h1>
+        <p>Servicios guardados desde el corazón del catálogo.</p>
+      </div>
+
+    </div>
+
+    @if (hasFavorites()) {
+      <div class="favorites-__grid">
+        @for (service of favorites(); track service.id) {
+          <article class="favorites-__card">
+            <img [src]="service.imageUrl" [alt]="service.imageAlt" />
+            <div class="favorites-__card-body">
+              <span>{{ service.badge }}</span>
+              <h2>{{ service.title }}</h2>
+              <p>{{ service.shortDescription }}</p>
+              <div class="favorites-__actions">
+                <a [routerLink]="['/servicios', service.slug]">Ver detalle</a>
+                <button type="button" (click)="removeFavorite(service.id)">Quitar</button>
+              </div>
+            </div>
+          </article>
+        }
+      </div>
+    } @else {
+      <div class="favorites-__empty">
+        <h2>No tienes favoritos todavía</h2>
+        <p>Explora el catálogo y usa el corazón para guardar servicios.</p>
+        <a routerLink="/servicios">Ir al catálogo</a>
+      </div>
+    }
+  </div>
+</section>

@@ -1,0 +1,92 @@
+.neo-hero {
+  padding: 4rem 1.5rem 3rem;
+}
+
+.neo-hero__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.neo-hero__eyebrow {
+  display: inline-flex;
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(70, 217, 255, 0.08);
+  color: #46d9ff;
+  border: 1px solid rgba(70, 217, 255, 0.2);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+.neo-hero__title {
+  margin: 1rem 0 0;
+  font-size: clamp(2.8rem, 7vw, 5.4rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.neo-hero__description {
+  margin: 1rem 0 0;
+  max-width: 620px;
+  color: #a9b7d1;
+  line-height: 1.8;
+}
+
+.neo-hero__actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.neo-hero__button {
+  padding: 0.95rem 1.25rem;
+  border-radius: 18px;
+  font-weight: 700;
+}
+
+.neo-hero__button--primary {
+  background: linear-gradient(135deg, #ff6b6b, #ff955c);
+  color: #fff;
+  box-shadow: 0 16px 32px rgba(255, 107, 107, 0.24);
+}
+
+.neo-hero__button--secondary {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.neo-hero__visual {
+  position: relative;
+}
+
+.neo-hero__orb {
+  position: absolute;
+  inset: auto -30px -30px auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 40% 60% 55% 45% / 45% 40% 60% 55%;
+  background: linear-gradient(135deg, rgba(70, 217, 255, 0.45), rgba(184, 255, 106, 0.25));
+  filter: blur(10px);
+}
+
+.neo-hero__image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  border-radius: 36px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 900px) {
+  .neo-hero__container {
+    grid-template-columns: 1fr;
+  }
+}

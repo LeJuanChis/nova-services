@@ -1,0 +1,63 @@
+<section class="services-page">
+  <div class="services-page__container">
+    <aside class="services-page__sidebar">
+      <span class="services-page__eyebrow">CATÁLOGO</span>
+      <h1 class="services-page__title">Servicios</h1>
+      <p class="services-page__copy">Explora una selección de servicios digitales pensados en ti.</p>
+
+      <div class="services-page__filters">
+        @for (category of categories; track category.id) {
+          <button
+            type="button"
+            class="services-page__filter"
+            [class.services-page__filter--active]="activeCategory === category.id"
+            (click)="selectCategory(category.id)"
+          >
+            {{ category.label }}
+          </button>
+        }
+      </div>
+    </aside>
+
+    <div class="services-page__content">
+      <div class="services-page__grid">
+        @if (filteredServices$ | async; as services) {
+          @for (service of services; track service.id) {
+            <article class="service-card-">
+              <div class="service-card-__media">
+                <img [src]="service.imageUrl" [alt]="service.imageAlt" />
+
+                <div class="service-card-__topbar">
+                  <span>{{ service.badge }}</span>
+
+                  <button
+                    type="button"
+                    class="service-card-__favorite"
+                    [class.service-card-__favorite--active]="isFavorite(service.id)"
+                    (click)="toggleFavorite(service.id)"
+                  >
+                    ♥
+                  </button>
+                </div>
+              </div>
+
+              <div class="service-card-__body">
+                <h2>{{ service.title }}</h2>
+                <p>{{ service.shortDescription }}</p>
+
+                <div class="service-card-__footer">
+                  <div>
+                    <strong>{{ service.price | currency:'USD':'symbol':'1.0-0' }}</strong>
+                    <span>{{ service.priceSuffix }}</span>
+                  </div>
+
+                  <a [routerLink]="['/servicios', service.slug]">Ver detalle</a>
+                </div>
+              </div>
+            </article>
+          }
+        }
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,61 @@
+<section class="service-detail-">
+  <div class="service-detail-__container">
+    @if (service$ | async; as service) {
+      <div class="service-detail-__hero">
+        <div class="service-detail-__main-image-card">
+          <img
+            class="service-detail-__main-image"
+            [src]="service.detailMainImage"
+            [alt]="service.imageAlt"
+          />
+        </div>
+
+        <aside class="service-detail-__investment-card">
+          <span class="service-detail-__investment-label">INVERSIÓN</span>
+
+          <div class="service-detail-__price-row">
+            <strong class="service-detail-__price">
+              {{ service.price }}
+            </strong>
+            <span class="service-detail-__price-suffix">
+              {{ service.priceSuffix }}
+            </span>
+          </div>
+
+          <a class="service-detail-__cta" routerLink="/contactos">
+            Contactar ahora
+          </a>
+        </aside>
+      </div>
+
+      <div class="service-detail-__content">
+        <span class="service-detail-__badge">{{ service.badge }}</span>
+
+        <h1 class="service-detail-__title">
+          {{ service.title }}
+        </h1>
+
+        <p class="service-detail-__description">
+          {{ service.description }}
+        </p>
+      </div>
+
+      <div class="service-detail-__features">
+        @for (feature of service.features; track feature.title) {
+          <article class="service-detail-__feature-card">
+            <span class="service-detail-__feature-icon">✦</span>
+            <h2 class="service-detail-__feature-title">{{ feature.title }}</h2>
+            <p class="service-detail-__feature-description">
+              {{ feature.description }}
+            </p>
+          </article>
+        }
+      </div>
+    } @else {
+      <div class="service-detail-__not-found">
+        <h1>Servicio no encontrado</h1>
+        <a routerLink="/servicios">Volver a servicios</a>
+      </div>
+    }
+  </div>
+</section>

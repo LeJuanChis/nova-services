@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "slug": "mentoria-desarrollo-software",
+    "category": "education",
+    "badge": "EDUCACIÓN",
+    "title": "Mentoría en el Desarrollo de Software",
+    "shortDescription": "Sesiones personalizadas para tu equipo de desarrollo, enfocadas en crecimiento profesional y fortalecimiento técnico.",
+    "description": "Ofrecemos mentoría personalizada para equipos de desarrollo, enfocándonos en crecimiento profesional y fortalecimiento técnico. Nuestras sesiones se adaptan a las necesidades específicas de tu equipo, abordando temas como mejores prácticas, arquitectura de software, metodologías ágiles y desarrollo de habilidades blandas para potenciar el rendimiento y la colaboración.",
+    "price": 120,
+    "priceSuffix": "hora",
+    "imageUrl": "images/service-developers.jpg",
+    "imageAlt": "Mentoría en el desarrollo de software",
+    "detailMainImage": "images/service-developers.jpg",
+    "featured": true,
+    "featuredLayout": "bottom-left",
+    "features": [
+      {
+        "title": "Desarrollos personalizados",
+        "description": "Tu equipo recibe mentoría adaptada a sus necesidades, desafíos y objetivos específicos."
+      },
+      {
+        "title": "Tiempo record de resultados",
+        "description": "Obtén un análisis detallado y recomendaciones clave en un plazo de tiempo sorprendentemente corto."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "auditoria-de-servidores-internos-y-en-la-nube",
+    "category": "cloud",
+    "badge": "NUBE",
+    "title": "Auditoría de Servidores Internos y en la Nube",
+    "shortDescription": "Auditoría integral para optimizar rendimiento, escalabilidad y seguridad de tu infraestructura tecnológica.",
+    "description": "Realizamos auditorías exhaustivas de servidores internos y en la nube para identificar áreas de mejora en rendimiento, escalabilidad y seguridad. Nuestro enfoque incluye análisis de configuración, evaluación de vulnerabilidades, recomendaciones de optimización y estrategias para garantizar la continuidad del negocio y la protección de datos.",
+    "price": 5000,
+    "priceSuffix": " fijo",
+    "imageUrl": "images/service-cloud-audit.jpg",
+    "imageAlt": "Auditoría de servidores internos y en la nube",
+    "detailMainImage": "images/service-cloud-audit.jpg",
+    "featured": true,
+    "featuredLayout": "top-left",
+    "features": [
+      {
+        "title": "Auditoria pensada para ti",
+        "description": "Cada auditoría se adapta a las necesidades de tu infraestructura, objetivos y desafíos específicos."
+      },
+      {
+        "title": "Tiempo record de resultados",
+        "description": "Obtén un análisis detallado y recomendaciones clave en un plazo de tiempo sorprendentemente corto."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "planificacion-de-retiros-alpinos",
+    "category": "software-development",
+    "badge": "DESARROLLO DE SOFTWARE",
+    "title": "Desarrollo Frontend Personalizado",
+    "shortDescription": "Accede a desarrolladores frontend expertos para crear interfaces de usuario atractivas, funcionales y adaptadas a tus necesidades específicas.",
+    "description": "Ofrecemos servicios de desarrollo frontend personalizado, conectándote con desarrolladores expertos que pueden crear interfaces de usuario atractivas, funcionales y adaptadas a tus necesidades específicas. Ya sea que necesites una aplicación web, un sitio interactivo o una experiencia móvil, nuestros desarrolladores trabajan contigo para transformar tus ideas en soluciones digitales efectivas y visualmente impactantes.",
+    "price": 150,
+    "priceSuffix": " hora",
+    "imageUrl": "images/frontend-service.jpg",
+    "imageAlt": "Desarrollo frontend personalizado",
+    "detailMainImage": "images/frontend-service.jpg",
+    "featured": true,
+    "featuredLayout": "top-right",
+    "features": [
+      {
+        "title": "Desarrollo pensado para ti",
+        "description": "Cada desarrollo se adapta a las necesidades de tu proyecto, objetivos y desafíos específicos."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "sprint-de-identidad-de-marca",
+    "category": "software-development",
+    "badge": "DESARROLLO DE SOFTWARE",
+    "title": "Desarrollo Backend Personalizado",
+    "shortDescription": "Conecta con desarrolladores backend expertos para construir la lógica, la base de datos y la infraestructura que impulsa tus aplicaciones digitales.",
+    "description": "Ofrecemos servicios de desarrollo backend personalizado, conectándote con desarrolladores expertos que pueden construir la lógica, la base de datos y la infraestructura que impulsa tus aplicaciones digitales. Ya sea que necesites una API robusta, integración con servicios externos o una arquitectura escalable, nuestros desarrolladores backend trabajan contigo para crear soluciones eficientes, seguras y adaptadas a tus necesidades específicas.",
+    "price": 100,
+    "priceSuffix": " hora",
+    "imageUrl": "images/backend-service.jpeg",
+    "imageAlt": "Desarrollo backend personalizado",
+    "detailMainImage": "images/backend-service.jpeg",
+    "featured": true,
+    "featuredLayout": "bottom-right",
+    "features": [
+      {
+        "title": "Desarrollo pensado para ti",
+        "description": "Cada desarrollo se adapta a las necesidades de tu proyecto, objetivos y desafíos específicos."
+      }
+    ]
+  },
+    {
+    "id": 5,
+    "slug": "sprint-de-identidad-de-marca",
+    "category": "ui-ux",
+    "badge": "UI/UX",
+    "title": "Diseño de Interfaz y Experiencia de Usuario",
+    "shortDescription": "Conecta con diseñadores UI/UX expertos para crear experiencias de usuario intuitivas y atractivas.",
+    "description": "Ofrecemos servicios de diseño de interfaz y experiencia de usuario personalizados, conectándote con diseñadores expertos que pueden crear interfaces intuitivas y atractivas. Ya sea que necesites un diseño web, una aplicación móvil o una experiencia de producto, nuestros diseñadores trabajan contigo para transformar tus ideas en soluciones digitales efectivas y visualmente impactantes.",
+    "price": 1200,
+    "priceSuffix": " hora",
+    "imageUrl": "images/ui-ux-service.webp",
+    "imageAlt": "Diseño de interfaz y experiencia de usuario",
+    "detailMainImage": "images/ui-ux-service.webp",
+    "featured": false,
+    "features": [
+      {
+        "title": "Desarrollo pensado para ti",
+        "description": "Cada desarrollo se adapta a las necesidades de tu proyecto, objetivos y desafíos específicos."
+      }
+    ]
+  }
+]

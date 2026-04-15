@@ -1,0 +1,200 @@
+.service-detail- {
+  padding: 3rem 1.5rem 4rem;
+}
+
+.service-detail-__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-detail-__hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 1.5rem;
+  align-items: end;
+}
+
+.service-detail-__main-image-card {
+  overflow: hidden;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.25);
+}
+
+.service-detail-__main-image {
+  width: 100%;
+  height: 420px;
+  display: block;
+  object-fit: cover;
+}
+
+.service-detail-__investment-card {
+  padding: 1.2rem;
+  border-radius: 24px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.03)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.24);
+  align-self: center;
+}
+
+.service-detail-__investment-label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #9fb0d0;
+}
+
+.service-detail-__price-row {
+  margin-top: 0.7rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.service-detail-__price {
+  font-size: 2.2rem;
+  line-height: 1;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.service-detail-__price-suffix {
+  font-size: 0.9rem;
+  color: #b8c4da;
+  font-weight: 600;
+}
+
+.service-detail-__cta {
+  margin-top: 1.2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 52px;
+  padding: 0 1rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ff7b5c, #ff8f66);
+  color: #ffffff;
+  font-weight: 800;
+  box-shadow: 0 16px 30px rgba(255, 123, 92, 0.22);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-detail-__cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 38px rgba(255, 123, 92, 0.28);
+}
+
+.service-detail-__content {
+  margin-top: 1.4rem;
+  max-width: 820px;
+}
+
+.service-detail-__badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.38rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(70, 217, 255, 0.08);
+  color: #46d9ff;
+  border: 1px solid rgba(70, 217, 255, 0.14);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.service-detail-__title {
+  margin: 1rem 0 0;
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+}
+
+.service-detail-__description {
+  margin: 1.2rem 0 0;
+  color: #aebbd3;
+  line-height: 1.9;
+  font-size: 1rem;
+  max-width: 70ch;
+}
+
+.service-detail-__features {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.service-detail-__feature-card {
+  padding: 1.25rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.service-detail-__feature-icon {
+  color: #b8ff6a;
+  font-size: 1rem;
+}
+
+.service-detail-__feature-title {
+  margin: 0.8rem 0 0;
+  font-size: 1.05rem;
+  color: #ffffff;
+}
+
+.service-detail-__feature-description {
+  margin: 0.6rem 0 0;
+  color: #9fb0d0;
+  line-height: 1.7;
+}
+
+.service-detail-__not-found {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .service-detail-__hero {
+    grid-template-columns: 1fr;
+  }
+
+  .service-detail-__main-image {
+    height: 360px;
+  }
+
+  .service-detail-__investment-card {
+    max-width: 320px;
+  }
+
+  .service-detail-__features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .service-detail- {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .service-detail-__main-image {
+    height: 280px;
+  }
+
+  .service-detail-__investment-card {
+    max-width: 100%;
+  }
+
+  .service-detail-__title {
+    font-size: 2.3rem;
+  }
+}

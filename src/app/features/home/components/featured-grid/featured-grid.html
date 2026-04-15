@@ -1,0 +1,31 @@
+<section class="featured-grid">
+  <div class="featured-grid__container">
+    <div class="featured-grid__header">
+      <h2>Sección destacada</h2>
+      <a routerLink="/servicios">Ver todos →</a>
+    </div>
+
+    <div class="featured-grid__layout">
+      @if (services$ | async; as services) {
+        @for (service of services; track service.id) {
+          <article
+            class="featured-grid__card"
+            [class.featured-grid__card--top-left]="service.featuredLayout === 'top-left'"
+            [class.featured-grid__card--top-right]="service.featuredLayout === 'top-right'"
+            [class.featured-grid__card--bottom-left]="service.featuredLayout === 'bottom-left'"
+            [class.featured-grid__card--bottom-right]="service.featuredLayout === 'bottom-right'"
+          >
+            <img class="featured-grid__image" [src]="service.imageUrl" [alt]="service.imageAlt" />
+            <div class="featured-grid__overlay"></div>
+            <div class="featured-grid__content">
+              <span>{{ service.badge }}</span>
+              <h3>{{ service.title }}</h3>
+              <p>{{ service.shortDescription }}</p>
+              <a [routerLink]="['/servicios', service.slug]">Explorar</a>
+            </div>
+          </article>
+        }
+      }
+    </div>
+  </div>
+</section>

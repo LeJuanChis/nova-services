@@ -1,0 +1,119 @@
+.contact- {
+  padding: 3rem 1.5rem 4rem;
+}
+
+.contact-__container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.contact-__intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-__eyebrow {
+  color: #46d9ff;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.contact-__title {
+  margin: 0.8rem 0 0;
+  font-size: clamp(2.4rem, 5vw, 4.3rem);
+  line-height: 0.95;
+}
+
+.contact-__copy {
+  max-width: 62ch;
+  margin: 1rem auto 0;
+  color: #9fb0d0;
+  line-height: 1.8;
+}
+
+.contact-__card {
+  padding: 1.5rem;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.contact-__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.contact-__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-__field label {
+  margin-bottom: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #9fb0d0;
+}
+
+.contact-__field input,
+.contact-__field select,
+.contact-__field textarea {
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+  outline: none;
+}
+
+.contact-__field input:focus,
+.contact-__field select:focus,
+.contact-__field textarea:focus {
+  border-color: rgba(70, 217, 255, 0.4);
+  box-shadow: 0 0 0 4px rgba(70, 217, 255, 0.08);
+}
+
+.contact-__control--error {
+  border-color: rgba(255, 107, 107, 0.55) !important;
+  box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.08);
+}
+
+.contact-__field small {
+  margin-top: 0.45rem;
+  color: #ff9d9d;
+}
+
+.contact-__button {
+  border: 0;
+  padding: 1rem 1.2rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #46d9ff, #29bdf0);
+  color: #071018;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.contact-__success {
+  padding: 1rem;
+  border-radius: 16px;
+  background: rgba(184, 255, 106, 0.12);
+  color: #d9ffc0;
+  border: 1px solid rgba(184, 255, 106, 0.18);
+}
+
+@media (max-width: 640px) {
+  .contact-__row {
+    grid-template-columns: 1fr;
+  }
+}

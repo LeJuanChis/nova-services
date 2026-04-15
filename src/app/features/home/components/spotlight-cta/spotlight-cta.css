@@ -1,0 +1,45 @@
+.spotlight-cta {
+  padding: 1rem 1.5rem 4rem;
+}
+
+.spotlight-cta__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at right top, rgba(184, 255, 106, 0.18), transparent 28%),
+    linear-gradient(135deg, rgba(255, 107, 107, 0.22), rgba(70, 217, 255, 0.18)),
+    rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.spotlight-cta__eyebrow {
+  color: #b8ff6a;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.spotlight-cta__title {
+  margin: 0.5rem 0 0;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+}
+
+.spotlight-cta__text {
+  color: #d4dded;
+  max-width: 52ch;
+}
+
+.spotlight-cta__button {
+  padding: 1rem 1.3rem;
+  border-radius: 18px;
+  background: #fff;
+  color: #111827;
+  font-weight: 800;
+}

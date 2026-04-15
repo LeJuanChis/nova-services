@@ -1,0 +1,17 @@
+<header class="header">
+  <div class="header__container">
+    <a class="header__brand" routerLink="/">
+      <span class="header__brand-mark"></span>
+      <span>NovaServices</span>
+    </a>
+
+    <button class="header__toggle" type="button" (click)="toggleMenu()">☰</button>
+
+    <nav class="header__nav" [class.header__nav--open]="menuOpen">
+      <a class="header__link" routerLink="/" routerLinkActive="header__link--active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">Inicio</a>
+      <a class="header__link" routerLink="/servicios" routerLinkActive="header__link--active" (click)="closeMenu()">Servicios</a>
+      <a class="header__link" routerLink="/favoritos" routerLinkActive="header__link--active" (click)="closeMenu()">Favoritos <span class="header__badge">{{ favoritesCount }}</span></a>
+      <a class="header__link" routerLink="/contactos" routerLinkActive="header__link--active" (click)="closeMenu()">Contacto</a>
+    </nav>
+  </div>
+</header>
